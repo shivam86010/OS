@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useOS } from "@/store/os";
+import { useOS } from '../../store/os'
 
 const lines = [
   "BOOT v3.14 — Shivam OS",

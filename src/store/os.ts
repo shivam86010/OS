@@ -1,6 +1,6 @@
 import { create } from "zustand";
-import { achievements as ACHIEVEMENTS } from "@/data/portfolio";
-import { sfx, setMuted } from "@/lib/sound";
+import { achievements as ACHIEVEMENTS } from "../data/portfolio";
+import { sfx, setMuted } from "../lib/sound";
 import { loadVFS, vfsCreate as _create, vfsDelete as _delete, vfsRename as _rename, vfsWrite as _write, type VFS, type VNodeKind } from "@/lib/vfs";
 
 import wallpaperIndigo from "@/assets/wallpaper-indigo.jpg";
