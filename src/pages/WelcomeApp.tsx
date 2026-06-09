@@ -1,4 +1,4 @@
-import shivam from "@/assets/shivam-welcome.jpg";
+import shivam from "../assets/shivam-welcome.jpeg";
 import { profile } from "../data/portfolio";
 import { useOS } from "../store/os";
 import { ArrowRight } from "lucide-react";

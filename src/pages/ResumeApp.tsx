@@ -1,5 +1,5 @@
 import { Download, ExternalLink } from "lucide-react";
-import { useOS } from "@/store/os";
+import { useOS } from "../store/os";
 import {
   profile,
   experience,
@@ -8,7 +8,7 @@ import {
   education,
   accolades,
 } from "../data/portfolio";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
+// import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 export function ResumeApp() {
   const unlock = useOS((s) => s.unlock);
@@ -27,7 +27,7 @@ export function ResumeApp() {
         </span>
         <span className="text-muted-foreground">· 240 KB · 1 page</span>
         <a
-          href={resumeAsset.url}
+          // href={resumeAsset.url}
           target="_blank"
           rel="noopener noreferrer"
           className="ml-auto inline-flex items-center gap-1 rounded px-2 py-1 hover:bg-white/10"
@@ -35,7 +35,7 @@ export function ResumeApp() {
           <ExternalLink className="h-3.5 w-3.5" /> Open
         </a>
         <a
-          href={resumeAsset.url}
+          // href={resumeAsset.url}
           download="ShivamSingh-Resume.pdf"
           onClick={handleDownload}
           className="inline-flex items-center gap-1 rounded bg-accent px-2.5 py-1 font-semibold text-accent-foreground hover:brightness-110"
@@ -46,12 +46,12 @@ export function ResumeApp() {
 
       <div className="grid flex-1 grid-cols-1 gap-0 overflow-hidden md:grid-cols-[1fr_260px]">
         <object
-          data={resumeAsset.url}
+          // data={resumeAsset.url}
           type="application/pdf"
           className="h-full w-full bg-white"
         >
           <iframe
-            src={resumeAsset.url}
+            // src={resumeAsset.url}
             title="Resume PDF"
             className="h-full w-full"
           />

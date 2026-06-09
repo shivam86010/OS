@@ -1,0 +1,176 @@
+@import "tailwindcss"; 
+
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-glass: var(--glass);
+  --color-glass-border: var(--glass-border);
+  --color-window: var(--window);
+  --color-window-border: var(--window-border);
+  --color-titlebar: var(--titlebar);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  --shadow-window: 0 30px 60px -15px oklch(0 0 0 / 0.55), 0 10px 30px -10px oklch(0 0 0 / 0.4);
+  --shadow-glow: 0 0 40px -10px var(--accent);
+}
+
+/* default theme: midnight indigo glassmorphism */
+:root {
+  --radius: 0.875rem;
+  --background: oklch(0.14 0.04 270);
+  --foreground: oklch(0.97 0.01 270);
+  --card: oklch(0.18 0.04 270);
+  --card-foreground: oklch(0.97 0.01 270);
+  --popover: oklch(0.18 0.04 270 / 0.95);
+  --popover-foreground: oklch(0.97 0.01 270);
+  --primary: oklch(0.65 0.21 285);
+  --primary-foreground: oklch(0.98 0.01 270);
+  --secondary: oklch(0.25 0.05 270);
+  --secondary-foreground: oklch(0.97 0.01 270);
+  --muted: oklch(0.22 0.04 270);
+  --muted-foreground: oklch(0.7 0.03 270);
+  --accent: oklch(0.7 0.2 290);
+  --accent-foreground: oklch(0.14 0.04 270);
+  --destructive: oklch(0.62 0.24 25);
+  --destructive-foreground: oklch(0.97 0.01 270);
+  --border: oklch(1 0 0 / 0.1);
+  --input: oklch(1 0 0 / 0.12);
+  --ring: oklch(0.7 0.2 290);
+  --glass: oklch(0.2 0.04 270 / 0.55);
+  --glass-border: oklch(1 0 0 / 0.12);
+  --window: oklch(0.18 0.04 270 / 0.85);
+  --window-border: oklch(1 0 0 / 0.12);
+  --titlebar: oklch(0.22 0.04 270 / 0.9);
+  --success: oklch(0.72 0.18 150);
+  --warning: oklch(0.78 0.17 75);
+  --danger: oklch(0.65 0.22 25);
+  --dock: oklch(0.2 0.04 270 / 0.45);
+}
+
+[data-theme="mint"] {
+  --background: oklch(0.12 0.02 180);
+  --foreground: oklch(0.97 0.02 160);
+  --card: oklch(0.16 0.03 180);
+  --primary: oklch(0.78 0.18 160);
+  --primary-foreground: oklch(0.12 0.02 180);
+  --accent: oklch(0.85 0.2 155);
+  --accent-foreground: oklch(0.12 0.02 180);
+  --glass: oklch(0.15 0.02 180 / 0.55);
+  --window: oklch(0.15 0.02 180 / 0.85);
+  --titlebar: oklch(0.18 0.03 180 / 0.9);
+  --ring: oklch(0.78 0.18 160);
+}
+
+[data-theme="ember"] {
+  --background: oklch(0.13 0.01 30);
+  --foreground: oklch(0.97 0.01 60);
+  --card: oklch(0.18 0.02 30);
+  --primary: oklch(0.7 0.2 40);
+  --primary-foreground: oklch(0.13 0.01 30);
+  --accent: oklch(0.75 0.2 45);
+  --accent-foreground: oklch(0.13 0.01 30);
+  --glass: oklch(0.17 0.02 30 / 0.55);
+  --window: oklch(0.18 0.02 30 / 0.85);
+  --titlebar: oklch(0.21 0.02 30 / 0.9);
+  --ring: oklch(0.7 0.2 40);
+}
+
+[data-theme="retro"] {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.9 0.2 145);
+  --card: oklch(0.1 0 0);
+  --primary: oklch(0.85 0.22 145);
+  --primary-foreground: oklch(0.08 0 0);
+  --accent: oklch(0.85 0.22 145);
+  --accent-foreground: oklch(0.08 0 0);
+  --glass: oklch(0.1 0 0 / 0.7);
+  --window: oklch(0.08 0 0 / 0.95);
+  --titlebar: oklch(0.12 0 0 / 0.95);
+  --border: oklch(0.85 0.22 145 / 0.3);
+  --ring: oklch(0.85 0.22 145);
+  --muted-foreground: oklch(0.6 0.15 145);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html, body, #root { height: 100%; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: var(--glass);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid var(--glass-border);
+  }
+  .glass-strong {
+    background: var(--window);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border: 1px solid var(--window-border);
+  }
+  .font-display { font-family: var(--font-display); }
+  .font-mono { font-family: var(--font-mono); }
+  .shadow-window { box-shadow: var(--shadow-window); }
+  .text-glow { text-shadow: 0 0 20px currentColor; }
+  .scrollbar-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: oklch(1 0 0 / 0.15); border-radius: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.woff2') format('woff2');
+  font-weight: 100 900; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('https://fonts.gstatic.com/s/spacegrotesk/v20/V8mDoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUxjLA.woff2') format('woff2');
+  font-weight: 300 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2') format('woff2');
+  font-weight: 100 800; font-style: normal; font-display: swap;
+}

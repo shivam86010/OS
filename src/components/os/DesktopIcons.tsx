@@ -14,8 +14,8 @@ import {
   Folder,
   Palette,
   ShieldCheck,
-  Github,
   Music,
+  GitBranch,
 } from "lucide-react";
 import { useOS, type AppId } from "../../store/os";
 import { sfx } from "../../lib/sound";
@@ -52,7 +52,7 @@ const coreIcons: BaseIcon[] = [
   {
     app: "github",
     label: "GitCommit",
-    Icon: Github,
+    Icon: GitBranch,
     color: "from-zinc-700 to-emerald-700",
   },
   {
@@ -155,7 +155,7 @@ export function DesktopIcons() {
 
   return (
     <>
-      <div className="absolute left-4 top-12 z-10 grid grid-cols-1 gap-3">
+      <div className="absolute left-4 top-12 z-10 grid grid-cols-2 gap-3">
         {icons.map(({ app, label, emoji, Icon, color, removable }, i) => (
           <motion.button
             key={`${app}-${label}`}

@@ -1,11 +1,11 @@
 import { create } from "zustand";
 import { achievements as ACHIEVEMENTS } from "../data/portfolio";
 import { sfx, setMuted } from "../lib/sound";
-import { loadVFS, vfsCreate as _create, vfsDelete as _delete, vfsRename as _rename, vfsWrite as _write, type VFS, type VNodeKind } from "@/lib/vfs";
+import { loadVFS, vfsCreate as _create, vfsDelete as _delete, vfsRename as _rename, vfsWrite as _write, type VFS, type VNodeKind } from "../lib/vfs";
 
-import wallpaperIndigo from "@/assets/wallpaper-indigo.jpg";
-import wallpaperMint from "@/assets/wallpaper-mint.jpg";
-import wallpaperEmber from "@/assets/wallpaper-ember.jpg";
+import wallpaperMint from "../assets/wallpaper-mint.jpeg";
+import wallpaperEmber from "../assets/wallpaper-ember.jpeg";
+import wallpaperIndigo from '../assets/wallpaper-indigo.jpeg'
 
 export type AppId =
   | "welcome" | "about" | "projects" | "skills" | "experience"

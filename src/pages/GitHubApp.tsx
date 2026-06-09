@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import {
   Star,
   GitFork,
-  Github,
+  GitBranch,
   Activity,
   RefreshCw,
   GitCommit,
@@ -305,7 +305,7 @@ export function GitHubApp() {
     <div className="flex h-full flex-col bg-[oklch(0.18_0.02_270)] text-white">
       <div className="flex items-center justify-between border-b border-white/10 bg-black/30 px-4 py-2.5">
         <div className="flex items-center gap-2">
-          <Github className="h-4 w-4 text-emerald-400" />
+          <GitBranch className="h-4 w-4 text-emerald-400" />
           <span className="font-mono text-xs uppercase tracking-widest text-white/70">
             GitCommit.exe
           </span>

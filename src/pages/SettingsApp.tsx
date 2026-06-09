@@ -22,7 +22,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { useState } from "react";
-import shivamWelcome from "@/assets/shivam-welcome.jpg";
+import shivamWelcome from "../assets/shivam-welcome.jpeg";
 
 type SectionId =
   | "appearance"
