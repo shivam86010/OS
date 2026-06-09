@@ -5,7 +5,7 @@ import { profile } from "../data/portfolio";
 
 export function SecretVaultApp() {
   const user = useOS((s) => s.user);
-  const isRoot = useOS((s) => s.isRoot);
+  // const isRoot = useOS((s) => s.isRoot);
 
   if (user === "guest") {
     return (
