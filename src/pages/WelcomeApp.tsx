@@ -1,6 +1,6 @@
 import shivam from "@/assets/shivam-welcome.jpg";
-import { profile } from "@/data/portfolio";
-import { useOS } from "@/store/os";
+import { profile } from "../data/portfolio";
+import { useOS } from "../store/os";
 import { ArrowRight } from "lucide-react";
 
 export function WelcomeApp() {

@@ -13,7 +13,7 @@ import {
   CircleDot,
   Save,
 } from "lucide-react";
-import { profile } from "@/data/portfolio";
+import { profile } from "../data/portfolio";
 
 interface Repo {
   id: number;

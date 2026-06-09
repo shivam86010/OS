@@ -7,8 +7,8 @@ import {
   experience,
   accolades,
   education,
-} from "@/data/portfolio";
-import { sfx } from "@/lib/sound";
+} from "../data/portfolio";
+import { sfx } from "../lib/sound";
 
 type Msg = { role: "user" | "bot"; content: string; ts: number };
 

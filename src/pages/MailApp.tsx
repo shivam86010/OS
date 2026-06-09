@@ -8,8 +8,8 @@ import {
   Plus,
   ArrowLeft,
 } from "lucide-react";
-import { profile } from "@/data/portfolio";
-import { useOS } from "@/store/os";
+import { profile } from "../data/portfolio";
+import { useOS } from "../store/os";
 
 interface Mail {
   id: string;

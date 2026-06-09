@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { useOS } from "@/store/os";
-import { profile, projects, skills, experience } from "@/data/portfolio";
-import { sfx } from "@/lib/sound";
+import { useOS } from "../store/os";
+import { profile, projects, skills, experience } from "../data/portfolio";
+import { sfx } from "../lib/sound";
 import {
   initRepo,
   stageFiles,
@@ -9,7 +9,7 @@ import {
   log as gitLog,
   status as gitStatus,
   getRepo,
-} from "@/lib/gitSim";
+} from "../lib/gitSim";
 
 type Line = { kind: "in" | "out"; text: string };
 type Node = { type: "dir" | "file"; children?: Record<string, Node> };

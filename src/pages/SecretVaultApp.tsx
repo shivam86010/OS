@@ -1,7 +1,7 @@
 import { Lock, Download, Sparkles } from "lucide-react";
-import { useOS } from "@/store/os";
-import { profile } from "@/data/portfolio";
-import resumeMeta from "@/assets/resume.pdf.asset.json";
+import { useOS } from "../store/os";
+import { profile } from "../data/portfolio";
+// import resumeMeta from "@/assets/resume.pdf.asset.json";
 
 export function SecretVaultApp() {
   const user = useOS((s) => s.user);
@@ -42,7 +42,7 @@ export function SecretVaultApp() {
 
       <div className="grid gap-3 sm:grid-cols-2">
         <a
-          href={resumeMeta.url}
+          // href={resumeMeta.url}
           download={`${profile.name}-Resume.pdf`}
           className="group flex items-center gap-3 rounded-xl border border-glass-border bg-white/5 p-4 hover:bg-white/10"
         >

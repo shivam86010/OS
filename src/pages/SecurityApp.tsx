@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ShieldCheck, ScanLine, BugPlay, Trash2 } from "lucide-react";
-import { useOS } from "@/store/os";
+import { useOS } from "../store/os";
 
 const FAKE_FILES = [
   "/system/kernel.dll",

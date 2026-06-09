@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Brush, Eraser, Save, Trash2 } from "lucide-react";
-import { useOS } from "@/store/os";
+import { useOS } from "../store/os";
 
 const COLORS = [
   "#ffffff",

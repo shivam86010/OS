@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Cpu, MemoryStick, Activity, X, Wifi as WifiIcon } from "lucide-react";
-import { useOS } from "@/store/os";
+import { useOS } from "../store/os";
 
 const APP_LABELS: Record<string, string> = {
   welcome: "Welcome.app",

@@ -13,7 +13,7 @@ import {
   ImageIcon,
 } from "lucide-react";
 import { useOS } from "../store/os";
-import { pathOf, diskUsage, type VNode } from "@/lib/vfs";
+import { pathOf, diskUsage, type VNode } from "../lib/vfs";
 
 export function FilesApp() {
   const vfs = useOS((s) => s.vfs);

@@ -9,8 +9,8 @@ import {
   Sparkles,
   Copy,
 } from "lucide-react";
-import { projects } from "@/data/portfolio";
-import { useOS } from "@/store/os";
+import { projects } from "../data/portfolio";
+import { useOS } from "../store/os";
 
 export function ProjectsApp() {
   const [openId, setOpenId] = useState<string | null>(null);

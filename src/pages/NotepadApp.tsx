@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Save, Copy, ClipboardPaste } from "lucide-react";
-import { useOS } from "@/store/os";
+import { useOS } from "../store/os";
 
 export function NotepadApp() {
   const fileId = useOS((s) => s.openFileId);

@@ -7,7 +7,7 @@ import {
   projects,
   education,
   accolades,
-} from "@/data/portfolio";
+} from "../data/portfolio";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 export function ResumeApp() {

@@ -1,5 +1,5 @@
-import { useOS, WALLPAPERS, type ThemeId } from "@/store/os";
-import { achievements, profile } from "@/data/portfolio";
+import { useOS, WALLPAPERS, type ThemeId } from "../store/os";
+import { achievements, profile } from "../data/portfolio";
 import {
   Check,
   Trophy,
